@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b,c,temp,lcm;
+    cin >>a>>b;
+    c=a;
+    temp =b;
+    while(c!=temp)
+    {
+        if(c>temp)
+            c-=temp;
+        else
+            temp-=c;
+    }
+    lcm = (a*b)/c;
+    cout << lcm;
+    return 0;
+}
